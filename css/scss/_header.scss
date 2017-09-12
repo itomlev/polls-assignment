@@ -1,0 +1,15 @@
+header {
+	margin-bottom: 20px;
+	background: #333;
+	ul {
+		list-style: none;
+		li {
+			display: inline-block;
+			a {
+				display: block;
+				padding: 10px 20px;
+				color: #fff;
+			}
+		}
+	}
+}

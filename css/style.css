@@ -1,0 +1,61 @@
+header {
+  margin-bottom: 20px;
+  background: #333; }
+  header ul {
+    list-style: none; }
+    header ul li {
+      display: inline-block; }
+      header ul li a {
+        display: block;
+        padding: 10px 20px;
+        color: #fff; }
+
+.poll h1 {
+  font-weight: 300; }
+.poll form {
+  font-size: 2rem;
+  counter-reset: numList; }
+  .poll form label {
+    position: relative;
+    cursor: pointer; }
+    .poll form label:before {
+      counter-increment: numList;
+      content: counter(numList);
+      float: left;
+      position: absolute;
+      left: -40px;
+      font: normal 14px sans-serif;
+      text-align: center;
+      color: #fff;
+      line-height: 18px;
+      width: 2rem;
+      height: 2rem;
+      margin: .5rem 0;
+      line-height: 2rem;
+      background: #333;
+      -moz-border-radius: 999px;
+      border-radius: 999px;
+      transition: all .2s ease; }
+    .poll form label.not-chosen:before {
+      background: #999; }
+  .poll form input[type=radio] {
+    width: 2rem;
+    visibility: hidden; }
+  .poll form input[type=submit] {
+    cursor: pointer;
+    margin-bottom: 20px; }
+  .poll form .row .bar {
+    width: 0%;
+    height: calc(100% - 10px);
+    margin: 5px 0;
+    transition: all .2s ease;
+    background: #333;
+    color: #fff;
+    text-align: right;
+    font-size: 1rem;
+    line-height: 2.8rem;
+    font-weight: 300; }
+.poll .alert {
+  margin-top: 20px; }
+
+/*# sourceMappingURL=style.css.map */
