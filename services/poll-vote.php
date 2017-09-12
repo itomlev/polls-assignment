@@ -2,7 +2,7 @@
 
 include '../services/polls.php';
 
-header('Content-Type: application/json');
+header('Content-Type: application/json; charset=utf-8');
 
 if (empty($_POST)) {
 	$data = array('error'=>'missing poll data');
