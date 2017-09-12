@@ -21,6 +21,7 @@ class Polls {
 				fclose($poll_votes);
 			} else {
 				// error opening the file.
+				// TODO: return error message
 			}
 		}
 
