@@ -13,8 +13,9 @@ class Polls {
 			if ($poll_votes) {
 				while (($line = fgets($poll_votes)) !== false) {
 					$line = trim($line);
-					if (!array_key_exists($line, $votes))
+					if (!array_key_exists($line, $votes)) {
 						$votes[$line] = 0;
+					}
 					$votes[$line]++;
 				}
 
